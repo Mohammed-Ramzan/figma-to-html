@@ -52,7 +52,7 @@ nav .list-data ul {
 nav .list-data ul li {
     font-size: 18px;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: capitalize;
     margin-right: 25px;
     cursor: pointer;
