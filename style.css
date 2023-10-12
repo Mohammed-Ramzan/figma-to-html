@@ -105,7 +105,14 @@ main .hero .content p {
     width: 400px;
     margin: 10px 0;
 }
+main .hero .content ul {
+      list-style: none;
+    }
 
+    main .hero .content ul li::before {
+      content: "•"; /* Use a bullet point character */
+      margin-right: 5px; /* Add some spacing between the bullet point and text */
+    }
 main .hero .content ul li {
     /* width: 350px; */
     margin: 7px 10px;
