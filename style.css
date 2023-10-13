@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
@@ -52,7 +52,7 @@ nav .list-data ul {
 nav .list-data ul li {
     font-size: 18px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize;
     margin-right: 25px;
     cursor: pointer;
@@ -89,7 +89,24 @@ main .hero {
 main .hero .content {
     width: 500px;
 }
-
+main .hero .content h2 {
+    font-weight: 500;
+}
+main .hero .content ul {
+    padding-right: 100px;
+    list-style: none;
+}
+  main .hero .content ul li::before {
+    content: "•"; /* Use a bullet point character */
+    margin-right: 5px; /* Add some spacing between the bullet point and text */
+  }
+main .hero .content ul li {
+  /* width: 350px; */
+  margin: 7px 10px;
+}
+main .hero .content ul li span {
+    color: #10552C;
+}
 main .hero .content .heading {
     font-size: 52px;
     font-weight: bolder;
@@ -105,14 +122,7 @@ main .hero .content p {
     width: 400px;
     margin: 10px 0;
 }
-main .hero .content ul {
-      list-style: none;
-    }
 
-    main .hero .content ul li::before {
-      content: "•"; /* Use a bullet point character */
-      margin-right: 5px; /* Add some spacing between the bullet point and text */
-    }
 main .hero .content ul li {
     /* width: 350px; */
     margin: 7px 10px;
@@ -158,10 +168,11 @@ main .hero .image img {
 
 .form {
     background-color: #e9ffc6;
-    width: 80%;
-    height: 75%;
+    width: 85%;
+    height: 80%;
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 30px 0;
+    overflow: hidden;
 }
 
 .form h3 {
@@ -173,7 +184,8 @@ main .hero .image img {
 hr {
     color: #10552C;
     opacity: 0.5;
-    padding-bottom: 30px;
+    margin: 0 40px;
+    margin-bottom: 30px;
 }
 
 .about-main {
@@ -181,8 +193,8 @@ hr {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
-
 .about-main .heading-img {
     display: flex;
     margin-left: -30px;
@@ -213,13 +225,13 @@ hr {
     width: 100px;
     position: absolute;
     z-index: 4;
-    left: 350px;
-    top: 200px;
+    left: 220px;
+    top: 230px;
 }
 
 .sponser2 h3 {
-    font-size: 16px;
-    margin-bottom: -10px;
+    font-size: 12px;
+    margin-bottom: -13px;
 }
 
 .sponser2 img {
@@ -268,22 +280,22 @@ hr {
 
 .donate-section {
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-image: url('images/rect.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .donate-section .image {
-    width: 470px;
+    width: 800px;
 }
 
 .donate-section .image img {
     width: 100%;
-    overflow: hidden;
+    margin-bottom: 80px;
 }
 
 .donate-section .content {
@@ -293,12 +305,12 @@ hr {
 
 .donate-section .content h3 {
     color: #10552C;
-    font-size: 36px;
+    font-size: 33px;
     text-transform: capitalize;
 }
 
 .donate-section .content h4 {
-    padding: 20px 0;
+    padding: 20px 100px;
 }
 
 .donate-section .content h3 span {
@@ -308,10 +320,10 @@ hr {
 }
 
 .donate-section .content button {
-    padding: 15px 20px;
+    padding: 13px 30px;
     font-weight: bolder;
     background-color: #97cb43;
-    border-radius: 20px;
+    border-radius: 25px;
     font-size: 20px;
     border: none;
 }
@@ -322,6 +334,8 @@ footer {
 }
 
 footer .row1 {
+    width: 70%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -343,7 +357,7 @@ footer .row1 li {
 .row2 h3 {
     text-align: center;
     color: #97cb43;
-    font-size: 18px;
+    font-size: 17px;
     padding-bottom: 5px;
     text-transform: uppercase;
 }
@@ -373,9 +387,12 @@ footer .row1 li {
 
 .row3 {
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0;
+    justify-content: space-around;
+    padding: 40px 0;
     color: #f0f0f0;
+}
+.row3 p {
+    font-size: 16px;
 }
 
 .btn-resp {
@@ -476,7 +493,9 @@ nav.toggle {
     main .hero .content h2 ul li {
         text-align: left;
     }
-
+    main .hero .content ul {
+        padding-right: 0;
+    }
     main .hero .content ul li {
         margin: 10px 10px;
         text-align: left;
@@ -524,7 +543,6 @@ nav.toggle {
         padding: 45px 50px;
         text-align: center;
     }
-
     .donate-section .content h3 {
         font-size: 45px;
     }
@@ -557,7 +575,7 @@ nav.toggle {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
     .res-nav {
         padding: 18px;
     }
@@ -583,7 +601,9 @@ nav.toggle {
         width: 100%;
         font-size: 20px;
     }
-
+    .about {
+        height: 1216px;
+    }
     .sponser {
         right: -50px;
     }
@@ -657,7 +677,17 @@ nav.toggle {
         line-height: 41px;
         overflow: hidden;
     }
-
+    .donate-section .content h4 {
+        padding: 20px 10px;
+    font-weight: 500;
+}
+.donate-section .image {
+    width: 380px;
+}
+.donate-section .image img {
+    width: 100%;
+    margin-bottom: 30px;
+}
     footer .row1 {
         flex-direction: column;
         /* align-items: center; */
